@@ -31,6 +31,8 @@ import java.util.UUID;
 @Getter
 public final class TideChatColor extends TidePlugin {
 
+    public static TideChatColor instance;
+
     private TideConfig settingsConfig = this.getYml("settings");
     private TideConfig chatColorConfig = this.getYml("chatcolors");
     private TideConfig langConfig = this.getYml("lang");
@@ -56,6 +58,8 @@ public final class TideChatColor extends TidePlugin {
 
     @Override
     public void onEnable() {
+        instance = this;
+
         this.loadMessages(this.messageCache, this.getYml("lang"));
         this.loadChatColors();
         this.loadStorage();
@@ -100,6 +104,8 @@ public final class TideChatColor extends TidePlugin {
         this.loadStorage();
         this.loadListener();
         this.registerCommands();
+
+        instance = this;
 
         final double elapsed = System.currentTimeMillis() - start;
 

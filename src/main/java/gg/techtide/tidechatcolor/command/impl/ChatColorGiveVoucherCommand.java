@@ -34,7 +34,7 @@ public class ChatColorGiveVoucherCommand extends TideSubCommand<TideChatColor, C
                 .map(Player::getName)
                 .collect(Collectors.toSet()));
 
-        this.addTabCompleteArgument(1, ContextArgumentType.AS_INTEGER, Sets.mutable.of("1", "5", "10", "25", "50", "100"));
+        this.addTabCompleteArgument(1, ContextArgumentType.AS_INTEGER, Sets.mutable.of("1", "10", "64"));
 
         this.require(2);
 
