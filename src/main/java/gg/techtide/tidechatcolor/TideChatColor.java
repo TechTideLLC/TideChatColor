@@ -7,6 +7,7 @@ import gg.techtide.tidechatcolor.command.ChatColorCommand;
 import gg.techtide.tidechatcolor.command.impl.ChatColorGiveVoucherCommand;
 import gg.techtide.tidechatcolor.command.impl.ChatColorHelpCommand;
 import gg.techtide.tidechatcolor.command.impl.ChatColorReloadCommand;
+import gg.techtide.tidechatcolor.listener.InteractListener;
 import gg.techtide.tidechatcolor.listener.StorageJoinLeaveListener;
 import gg.techtide.tidechatcolor.player.ChatColorPlayer;
 import gg.techtide.tidechatcolor.player.storage.PlayerJsonStorage;
@@ -46,6 +47,8 @@ public final class TideChatColor extends TidePlugin {
 
     private ChatColorCommand chatColorCommand = new ChatColorCommand(this);
 
+    private InteractListener listener;
+
     @Override
     public String pluginName() {
         return "TideChatColor";
@@ -56,6 +59,7 @@ public final class TideChatColor extends TidePlugin {
         this.loadMessages(this.messageCache, this.getYml("lang"));
         this.loadChatColors();
         this.loadStorage();
+        this.loadListener();
 
         this.registerCommands();
     }
@@ -63,6 +67,7 @@ public final class TideChatColor extends TidePlugin {
     @Override
     public void onDisable() {
         this.storage.write();
+        this.listener.unregister();
 
         this.unregisterCommands();
     }
@@ -75,6 +80,7 @@ public final class TideChatColor extends TidePlugin {
         this.storage.write();
         this.configs.clear();
         this.chatColorRegistry.getRegistry().clear();
+        this.listener.unregister();
 
         this.settingsConfig = this.getYml("settings");
         this.chatColorConfig = this.getYml("chatcolors");
@@ -92,6 +98,7 @@ public final class TideChatColor extends TidePlugin {
 
         this.loadChatColors();
         this.loadStorage();
+        this.loadListener();
         this.registerCommands();
 
         final double elapsed = System.currentTimeMillis() - start;
@@ -139,5 +146,9 @@ public final class TideChatColor extends TidePlugin {
 
     private void unregisterCommands() {
         this.chatColorCommand.unregister();
+    }
+
+    private void loadListener() {
+        this.listener = new InteractListener(this);
     }
 }

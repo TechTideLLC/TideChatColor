@@ -78,6 +78,11 @@ messages:
       enabled: true
       value:
         - "&3&lTech&b&lTide &8‣ &bYou have received %amount%x chat color voucher(s)!"
+  chatcolor-creation-started:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou have started you &fcustom&b chat color creation!"
   color-removed:
     message:
       enabled: true
