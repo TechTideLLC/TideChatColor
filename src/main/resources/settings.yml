@@ -1,0 +1,32 @@
+command:
+  permission: "chatcolor.admin"
+  base-command: "chatcolor"
+  aliases:
+    - "chatcolors"
+    - "colors"
+    - "tidechatcolors"
+  sub-commands:
+    "reload":
+      base-alias: "reload"
+      aliases:
+        - "reloadconfig"
+    "help":
+      base-alias: "help"
+      aliases:
+        - "?"
+    "givevoucher":
+      base-alias: "givevoucher"
+      aliases:
+        - "customcolorvoucher"
+
+custom-color-voucher:
+  material: "BELL"
+  name: "&3&l[&b&l!&3&l] &bCustom Chat Color Voucher &8(&7Right-Click&8)"
+  enchanted: true
+  lore:
+    - "&8Redeemable Item"
+    - "&7"
+    - "&bInformation"
+    - "&b&l→ &7Action: &fRight-Click"
+    - "&b&l→ &Usage: &fCustom Chat Color Creation!"
+    - "&7"

@@ -1,0 +1,285 @@
+custom:
+  item:
+    unequipped:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      enchanted: false
+      name: "&6&l[&e&lUNEQUIPPED&6&l] &eCustom Chat Color"
+      lore:
+        - "&8Informational Item"
+        - "&7"
+        - "&6&lINFORMATION:"
+        - "&6 * &eStatus: &fUnequipped"
+        - "&6 * &ePreview: %color%Hello, I am %player%!"
+        - "&7"
+    equipped:
+      material: "LIME_STAINED_GLASS_PANE"
+      enchanted: false
+      name: "&2&l[&a&lEQUIPPED&2&l] &aCustom Chat Color"
+      lore:
+        - "&8Informational Item"
+        - "&7"
+        - "&2&lINFORMATION:"
+        - "&2 * &aStatus: &fEquipped"
+        - "&2 * &aPreview: %color%Hello, I am %player%!"
+        - "&7"
+
+chatcolors:
+  "red":
+    chat-color: "&c"
+    permission: "tidechatcolor.colors.red"
+    items:
+      locked:
+        material: "RED_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&4&l[&c&lLOCKED&4&l] &cRed Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&4&lINFORMATION:"
+          - "&4 * &cStatus: &fLocked"
+          - "&4 * &cPreview: %color%Hello, I am %player%!"
+          - "&7"
+      unequipped:
+        material: "ORANGE_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&6&l[&e&lUNEQUIPPED&6&l] &eRed Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&6&lINFORMATION:"
+          - "&6 * &eStatus: &fUnequipped"
+          - "&6 * &ePreview: %color%Hello, I am %player%!"
+          - "&7"
+      equipped:
+        material: "LIME_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lEQUIPPED&2&l] &aRed Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fEquipped"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"
+  "orange":
+    chat-color: "&6"
+    permission: "tidechatcolor.colors.orange"
+    items:
+      locked:
+        material: "RED_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&6&l[&e&lLOCKED&6&l] &eOrange Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&6&lINFORMATION:"
+          - "&6 * &eStatus: &fLocked"
+          - "&6 * &ePreview: %color%Hello, I am %player%!"
+          - "&7"
+      unequipped:
+        material: "ORANGE_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&e&l[&6&lUNEQUIPPED&e&l] &6Orange Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&e&lINFORMATION:"
+          - "&e * &6Status: &fUnequipped"
+          - "&e * &6Preview: %color%Hello, I am %player%!"
+          - "&7"
+      equipped:
+        material: "LIME_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lEQUIPPED&2&l] &aOrange Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fEquipped"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"
+  "yellow":
+    chat-color: "&e"
+    permission: "tidechatcolor.colors.yellow"
+    items:
+      locked:
+        material: "RED_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&e&l[&6&lLOCKED&e&l] &eYellow Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&e&lINFORMATION:"
+          - "&e * &6Status: &fLocked"
+          - "&e * &6Preview: %color%Hello, I am %player%!"
+          - "&7"
+      unequipped:
+        material: "ORANGE_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&e&l[&6&lUNEQUIPPED&e&l] &6Yellow Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&e&lINFORMATION:"
+          - "&e * &6Status: &fUnequipped"
+          - "&e * &6Preview: %color%Hello, I am %player%!"
+          - "&7"
+      equipped:
+        material: "LIME_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lEQUIPPED&2&l] &aYellow Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fEquipped"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"
+  "green":
+    chat-color: "&a"
+    permission: "tidechatcolor.colors.green"
+    items:
+      locked:
+        material: "RED_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lLOCKED&2&l] &aGreen Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fLocked"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"
+      unequipped:
+        material: "ORANGE_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&e&l[&6&lUNEQUIPPED&e&l] &6Green Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&e&lINFORMATION:"
+          - "&e * &6Status: &fUnequipped"
+          - "&e * &6Preview: %color%Hello, I am %player%!"
+          - "&7"
+      equipped:
+        material: "LIME_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lEQUIPPED&2&l] &aGreen Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fEquipped"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"
+  "blue":
+    chat-color: "&9"
+    permission: "tidechatcolor.colors.blue"
+    items:
+      locked:
+        material: "RED_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&1&l[&9&lLOCKED&1&l] &9Blue Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&1&lINFORMATION:"
+          - "&1 * &9Status: &fLocked"
+          - "&1 * &9Preview: %color%Hello, I am %player%!"
+          - "&7"
+      unequipped:
+        material: "ORANGE_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&9&l[&1&lUNEQUIPPED&9&l] &1Blue Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&9&lINFORMATION:"
+          - "&9 * &1Status: &fUnequipped"
+          - "&9 * &1Preview: %color%Hello, I am %player%!"
+          - "&7"
+      equipped:
+        material: "LIME_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lEQUIPPED&2&l] &aBlue Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fEquipped"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"
+  "purple":
+    chat-color: "&5"
+    permission: "tidechatcolor.colors.purple"
+    items:
+      locked:
+        material: "RED_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&3&l[&b&lLOCKED&3&l] &bPurple Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&3&lINFORMATION:"
+          - "&3 * &bStatus: &fLocked"
+          - "&3 * &bPreview: %color%Hello, I am %player%!"
+          - "&7"
+      unequipped:
+        material: "ORANGE_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&b&l[&3&lUNEQUIPPED&b&l] &3Purple Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&b&lINFORMATION:"
+          - "&b * &3Status: &fUnequipped"
+          - "&b * &3Preview: %color%Hello, I am %player%!"
+          - "&7"
+      equipped:
+        material: "LIME_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lEQUIPPED&2&l] &aPurple Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fEquipped"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"
+  "pink":
+    chat-color: "&d"
+    permission: "tidechatcolor.colors.pink"
+    items:
+      locked:
+        material: "RED_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&d&l[&f&lLOCKED&d&l] &dPink Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&d&lINFORMATION:"
+          - "&d * &fStatus: &fLocked"
+          - "&d * &fPreview: %color%Hello, I am %player%!"
+          - "&7"
+      unequipped:
+        material: "ORANGE_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&f&l[&d&lUNEQUIPPED&f&l] &dPink Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&f&lINFORMATION:"
+          - "&f * &dStatus: &fUnequipped"
+          - "&f * &dPreview: %color%Hello, I am %player%!"
+          - "&7"
+      equipped:
+        material: "LIME_STAINED_GLASS_PANE"
+        enchanted: false
+        name: "&2&l[&a&lEQUIPPED&2&l] &aPink Chat Color"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&2&lINFORMATION:"
+          - "&2 * &aStatus: &fEquipped"
+          - "&2 * &aPreview: %color%Hello, I am %player%!"
+          - "&7"

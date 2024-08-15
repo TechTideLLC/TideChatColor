@@ -1,0 +1,95 @@
+messages:
+  no-permission:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou do not have permission to do this."
+  invalid-player:
+    message:
+      enabled: true
+      value:
+        - "&c&lTech&4&lTide &8&l‣ &7You have specified an &cinvalid player&7."
+  invalid-amount:
+    message:
+      enabled: true
+      value:
+        - "&c&lTech&4&lTide &8&l‣ &7You have specified an &cinvalid amount&7."
+  reloaded:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bThe plugin &3TideChatColor&b has been reloaded in &3%time%ms&b."
+  admin-help:
+    sound:
+      enabled: true
+      value: "BLOCK_NOTE_PLING"
+      volume: 1
+      pitch: 1
+    message:
+      enabled: true
+      value:
+        - "&f&m----------------------------------"
+        - " "
+        - "&b&lTech&3&lTide &7— &bChat Color Admin Help"
+        - "&7&oCarefully crafted with expertise by &f&oindustry leaders&7&o."
+        - " "
+        - "&7<> = Required"
+        - "&7[] = Optional"
+        - " "
+        - "&b&lCommands"
+        - "&b&l→ &7/chatcolor reload"
+        - "&b&l→ &7/chatcolor givevoucher <player> <amount>"
+        - "&b&l→ &7/chatcolor"
+        - " "
+        - "&f&m----------------------------------"
+  player-help:
+    sound:
+      enabled: true
+      value: "BLOCK_NOTE_PLING"
+      volume: 1
+      pitch: 1
+    message:
+      enabled: true
+      value:
+        - "&f&m----------------------------------"
+        - " "
+        - "&b&lTech&3&lTide &7— &bChat Color Help"
+        - "&7&oCarefully crafted with expertise by &f&oindustry leaders&7&o."
+        - " "
+        - "&7<> = Required"
+        - "&7[] = Optional"
+        - " "
+        - "&b&lCommands"
+        - "&b&l→ &7/chatcolor"
+        - " "
+        - "&f&m----------------------------------"
+  no-permission-color:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou do not have permission to use the color %color%."
+  voucher-given:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou have gave a voucher to %player%!"
+  voucher-received:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou have received %amount%x chat color voucher(s)!"
+  color-removed:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou have unselected the &f%color%&b color!"
+  color-selected:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou have selected the &f%color%&b color!"
+  no-custom-colors:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou do not have any custom chat colors!"

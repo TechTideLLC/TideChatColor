@@ -1,0 +1,130 @@
+menus:
+  main-menu:
+    title: "&8&nChat&r &8&nColor&r &8&nMenu"
+    rows: 3
+    borders:
+      "grey":
+        material: "BLACK_STAINED_GLASS_PANE"
+        name: " "
+        lore: [ ]
+        slots:
+          - "0-26"
+    items:
+      settings:
+        slot: 13
+        material: "END_CRYSTAL"
+        name: "&4&l[&c&l!&4&l] &cChat Color Settings"
+        lore:
+          - "&8Menu Item"
+          - "&7"
+          - "&c&lINFORMATION"
+          - "&4 * &cCurrent Chat Color: &f%type%"
+          - "&7"
+      default-colors:
+        slot: 11
+        material: "YELLOW_DYE"
+        name: "&6&l[&e&l!&6&l] &eDefault Chat Colors"
+        lore:
+          - "&8Menu Items"
+          - "&7"
+          - "&e&lINFORMATION"
+          - " &6 * &eChat Colors: &f%colors%"
+          - "&7"
+      custom-colors:
+        slot: 15
+        material: "NAME_TAG"
+        name: "&2&l[&a&l!&2&l] &aCustom Chat Colors"
+        lore:
+          - "&8Menu Items"
+          - "&7"
+          - "&a&lINFORMATION"
+          - " &2 * &aChat Colors: &f%custom-colors%"
+          - "&7"
+  chatcolor-menu:
+    title: "&8&nSelect&r &8&nChat&r &8&nColor"
+    rows: 3
+    slots: [10,11,12,13,14,15,16]
+    borders:
+      "grey":
+        material: "BLACK_STAINED_GLASS_PANE"
+        name: " "
+        lore: [ ]
+        slots:
+          - "0-26"
+    items:
+      current-page:
+        slot: 22
+        material: "COMPASS"
+        name: "&8&lCurrent &7&lPage &8(&f%page%&8)"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&8&lINFORMATION:"
+          - "&7- &8&lPage: &f%page%"
+          - "&7"
+      next-page:
+        slot: 24
+        material: "SPECTRAL_ARROW"
+        name: "&8&lNext &7&lPage &8(&f%page%&8)"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&8&lINFORMATION:"
+          - "&7- &8&lPage: &f%page%"
+          - "&7"
+      previous-page:
+        slot: 20
+        material: "TIPPED_ARROW"
+        potion-type: "INSTANT_HEAL"
+        hide-flags: true
+        name: "&8&lPrevious &7&lPage &8(&f%page%&8)"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&8&lINFORMATION:"
+          - "&7- &8&lPage: &f%page%"
+          - "&7"
+  custom-chatcolor-menu:
+    title: "&8&nCustom&r &8&nChat&r &8&nColors"
+    rows: 3
+    slots: [10,11,12,13,14,15,16]
+    borders:
+      "grey":
+        material: "BLACK_STAINED_GLASS_PANE"
+        name: " "
+        lore: [ ]
+        slots:
+          - "0-26"
+    items:
+      current-page:
+        slot: 22
+        material: "COMPASS"
+        name: "&8&lCurrent &7&lPage &8(&f%page%&8)"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&8&lINFORMATION:"
+          - "&7- &8&lPage: &f%page%"
+          - "&7"
+      next-page:
+        slot: 24
+        material: "SPECTRAL_ARROW"
+        name: "&8&lNext &7&lPage &8(&f%page%&8)"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&8&lINFORMATION:"
+          - "&7- &8&lPage: &f%page%"
+          - "&7"
+      previous-page:
+        slot: 20
+        material: "TIPPED_ARROW"
+        potion-type: "INSTANT_HEAL"
+        hide-flags: true
+        name: "&8&lPrevious &7&lPage &8(&f%page%&8)"
+        lore:
+          - "&8Informational Item"
+          - "&7"
+          - "&8&lINFORMATION:"
+          - "&7- &8&lPage: &f%page%"
+          - "&7"

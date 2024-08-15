@@ -1,0 +1,7 @@
+storage:
+  type: "JSON" # JSON | SQL
+  host: 0.0.0.0
+  username: "username"
+  password: "password"
+  database: "database"
+  port: 3306
