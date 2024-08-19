@@ -15,7 +15,6 @@ gg\techtide\tidechatcolor\chatcolor\impl\InternalChatColor.class
 gg\techtide\tidechatcolor\player\storage\PlayerJsonStorage.class
 gg\techtide\tidechatcolor\TideChatColor.class
 gg\techtide\tidechatcolor\listener\InteractListener.class
-gg\techtide\tidechatcolor\menus\custom\CustomChatColorCreationMenu.class
 gg\techtide\tidechatcolor\chatcolor\ChatColor.class
 gg\techtide\tidechatcolor\listener\custom\service\CreationService.class
 gg\techtide\tidechatcolor\chatcolor\custom\CustomChatColor.class

@@ -10,10 +10,10 @@ menus:
         slots:
           - "0-26"
     items:
-      settings:
+      info:
         slot: 13
         material: "END_CRYSTAL"
-        name: "&4&l[&c&l!&4&l] &cChat Color Settings"
+        name: "&4&l[&c&l!&4&l] &cChat Color Info"
         lore:
           - "&8Menu Item"
           - "&7"

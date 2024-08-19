@@ -13,14 +13,14 @@ import org.bukkit.entity.Player;
 
 public class ChatColorMainMenu extends TideGenericMenu<TideChatColor> {
 
-    private final MenuItemBuilder settingsItem, customColorItem, defaultColorItem;
+    private final MenuItemBuilder infoItem, customColorItem, defaultColorItem;
 
     public ChatColorMainMenu(final TideChatColor plugin) {
         super(plugin, plugin.getMenusConfig(), "menus.main-menu.");
 
-        this.settingsItem = new MenuItemBuilder(
-                plugin.getMenusConfig().getItemBuilder("menus.main-menu.items.settings"),
-                plugin.getMenusConfig().getInt("menus.main-menu.items.settings.slot")
+        this.infoItem = new MenuItemBuilder(
+                plugin.getMenusConfig().getItemBuilder("menus.main-menu.items.info"),
+                plugin.getMenusConfig().getInt("menus.main-menu.items.info.slot")
         );
 
         this.customColorItem = new MenuItemBuilder(
@@ -48,15 +48,11 @@ public class ChatColorMainMenu extends TideGenericMenu<TideChatColor> {
         final TideInventory menuBuilder = this.createBase();
 
         menuBuilder.registerItem(this.customColorItem);
-        menuBuilder.registerItem(this.settingsItem);
+        menuBuilder.registerItem(this.infoItem);
         menuBuilder.registerItem(this.defaultColorItem);
 
         menuBuilder.registerClickEvent(this.customColorItem.getSlot(), event -> {
             new CustomChatColorMenu(this.plugin).open(player, 0);
-        });
-
-        menuBuilder.registerClickEvent(this.settingsItem.getSlot(), event -> {
-
         });
 
         menuBuilder.registerClickEvent(this.defaultColorItem.getSlot(), event -> {
