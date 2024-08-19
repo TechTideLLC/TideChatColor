@@ -17,16 +17,6 @@ public class CustomChatColor extends ChatColor {
         this.customColor = color;
     }
 
-    /*public String createColor(final String base, boolean italic, boolean bold) {
-
-        final StringBuilder color = new StringBuilder(base);
-
-        if (italic) color.append("&i");
-        if (bold) color.append("&b");
-
-        return color.toString();
-    }*/
-
     @Override
     public void load(TideChatColor plugin) {
         this.setColor(this.customColor);

@@ -35,5 +35,7 @@ public class InteractListener extends SimpleTideListener<TideChatColor> {
         Utils.removeItemsFromHand(player, 1, false);
 
         this.plugin.getMessageCache().sendMessage(player, "messages.chatcolor-creation-started");
+
+        this.plugin.getCreationService().add(player.getUniqueId());
     }
 }

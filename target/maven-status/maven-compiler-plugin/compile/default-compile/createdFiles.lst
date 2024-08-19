@@ -1,3 +1,4 @@
+gg\techtide\tidechatcolor\listener\custom\listener\ChatListener.class
 gg\techtide\tidechatcolor\command\ChatColorCommand.class
 gg\techtide\tidechatcolor\listener\StorageJoinLeaveListener.class
 gg\techtide\tidechatcolor\player\ChatColorPlayer.class
@@ -7,6 +8,7 @@ gg\techtide\tidechatcolor\chatcolor\registry\ChatColorRegistry.class
 gg\techtide\tidechatcolor\menus\ChatColorMainMenu.class
 gg\techtide\tidechatcolor\command\impl\ChatColorHelpCommand.class
 gg\techtide\tidechatcolor\menus\InternalChatColorMenu.class
+gg\techtide\tidechatcolor\listener\custom\ChatPluginType.class
 gg\techtide\tidechatcolor\player\storage\PlayerSQLStorage.class
 gg\techtide\tidechatcolor\TideChatColor$1.class
 gg\techtide\tidechatcolor\chatcolor\impl\InternalChatColor.class
@@ -15,5 +17,6 @@ gg\techtide\tidechatcolor\TideChatColor.class
 gg\techtide\tidechatcolor\listener\InteractListener.class
 gg\techtide\tidechatcolor\menus\custom\CustomChatColorCreationMenu.class
 gg\techtide\tidechatcolor\chatcolor\ChatColor.class
+gg\techtide\tidechatcolor\listener\custom\service\CreationService.class
 gg\techtide\tidechatcolor\chatcolor\custom\CustomChatColor.class
 gg\techtide\tidechatcolor\command\impl\ChatColorReloadCommand.class

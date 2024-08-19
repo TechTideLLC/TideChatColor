@@ -82,7 +82,8 @@ messages:
     message:
       enabled: true
       value:
-        - "&3&lTech&b&lTide &8‣ &bYou have started you &fcustom&b chat color creation!"
+        - "&3&lTech&b&lTide &8‣ &bYou have started you &fcustom&b chat color creation! Please"
+        - "&btype your color in chat! Type `cancel` to cancel!"
   color-removed:
     message:
       enabled: true
@@ -98,3 +99,18 @@ messages:
       enabled: true
       value:
         - "&3&lTech&b&lTide &8‣ &bYou do not have any custom chat colors!"
+  invalid-custom-color:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bPlease enter a &fvalid&b chat color!"
+  custom-color-created:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou have created a &fcustom&b chat color!"
+  creation-cancelled:
+    message:
+      enabled: true
+      value:
+        - "&3&lTech&b&lTide &8‣ &bYou have cancelled your chat color creation!"

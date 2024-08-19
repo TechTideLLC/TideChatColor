@@ -9,11 +9,12 @@ import gg.techtide.tidechatcolor.command.impl.ChatColorHelpCommand;
 import gg.techtide.tidechatcolor.command.impl.ChatColorReloadCommand;
 import gg.techtide.tidechatcolor.listener.InteractListener;
 import gg.techtide.tidechatcolor.listener.StorageJoinLeaveListener;
+import gg.techtide.tidechatcolor.listener.custom.listener.ChatListener;
+import gg.techtide.tidechatcolor.listener.custom.service.CreationService;
 import gg.techtide.tidechatcolor.player.ChatColorPlayer;
 import gg.techtide.tidechatcolor.player.storage.PlayerJsonStorage;
 import gg.techtide.tidechatcolor.player.storage.PlayerSQLStorage;
 import gg.techtide.tidelib.revamped.abysslibrary.PlaceholderReplacer;
-import gg.techtide.tidelib.revamped.abysslibrary.command.TideCommand;
 import gg.techtide.tidelib.revamped.abysslibrary.config.TideConfig;
 import gg.techtide.tidelib.revamped.abysslibrary.plugin.TidePlugin;
 import gg.techtide.tidelib.revamped.abysslibrary.storage.common.CommonStorageImpl;
@@ -23,8 +24,6 @@ import gg.techtide.tidelib.revamped.abysslibrary.utils.Utils;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
@@ -50,6 +49,9 @@ public final class TideChatColor extends TidePlugin {
     private ChatColorCommand chatColorCommand = new ChatColorCommand(this);
 
     private InteractListener listener;
+    private ChatListener chatListener;
+
+    private final CreationService creationService = new CreationService();
 
     @Override
     public String pluginName() {
@@ -85,6 +87,7 @@ public final class TideChatColor extends TidePlugin {
         this.configs.clear();
         this.chatColorRegistry.getRegistry().clear();
         this.listener.unregister();
+        this.chatListener.unregister();
 
         this.settingsConfig = this.getYml("settings");
         this.chatColorConfig = this.getYml("chatcolors");
@@ -156,5 +159,6 @@ public final class TideChatColor extends TidePlugin {
 
     private void loadListener() {
         this.listener = new InteractListener(this);
+        this.chatListener = new ChatListener(this);
     }
 }

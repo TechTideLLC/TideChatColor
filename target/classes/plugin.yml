@@ -2,3 +2,4 @@ name: TideChatColor
 version: '1.0-SNAPSHOT'
 main: gg.techtide.tidechatcolor.TideChatColor
 api-version: '1.20'
+softdepend: [TideChat]
