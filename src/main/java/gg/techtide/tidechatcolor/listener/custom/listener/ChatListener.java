@@ -37,6 +37,10 @@ public class ChatListener extends SimpleTideListener<TideChatColor> {
 
         final Player player = event.getPlayer();
 
+        if (!this.plugin.getCreationService().contains(player.getUniqueId())) {
+            return;
+        }
+
         event.setCancelled(true);
 
         this.createCustomColor(player, event.getMessage());
@@ -51,16 +55,16 @@ public class ChatListener extends SimpleTideListener<TideChatColor> {
 
         final Player player = event.getPlayer();
 
+        if (!this.plugin.getCreationService().contains(player.getUniqueId())) {
+            return;
+        }
+
         event.setCancelled(true);
 
         this.createCustomColor(player, event.getMessage());
     }
 
     private void createCustomColor(final Player player, final String message) {
-
-        if (!this.plugin.getCreationService().contains(player.getUniqueId())) {
-            return;
-        }
 
         if (message.equalsIgnoreCase("cancel")) {
             this.plugin.getCreationService().remove(player.getUniqueId());
