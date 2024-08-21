@@ -19,6 +19,8 @@ command:
       aliases:
         - "customcolorvoucher"
 
+open-menu: "MAIN" # Main, Custom, Default
+
 custom-color-voucher:
   material: "BELL"
   name: "&3&l[&b&l!&3&l] &bCustom Chat Color Voucher &8(&7Right-Click&8)"

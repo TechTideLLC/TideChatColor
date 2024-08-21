@@ -47,13 +47,16 @@ public class ChatColorMainMenu extends TideGenericMenu<TideChatColor> {
 
         final TideInventory menuBuilder = this.createBase();
 
-        menuBuilder.registerItem(this.customColorItem);
+        if (this.customColorItem.getSlot() != -1) {
+            menuBuilder.registerItem(this.customColorItem);
+
+            menuBuilder.registerClickEvent(this.customColorItem.getSlot(), event -> {
+                new CustomChatColorMenu(this.plugin).open(player, 0);
+            });
+        }
+
         menuBuilder.registerItem(this.infoItem);
         menuBuilder.registerItem(this.defaultColorItem);
-
-        menuBuilder.registerClickEvent(this.customColorItem.getSlot(), event -> {
-            new CustomChatColorMenu(this.plugin).open(player, 0);
-        });
 
         menuBuilder.registerClickEvent(this.defaultColorItem.getSlot(), event -> {
             new InternalChatColorMenu(this.plugin).open(player, 0);
