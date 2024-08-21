@@ -1,5 +1,5 @@
 name: TideChatColor
-version: '${project.version}'
+version: '1.0.2'
 main: gg.techtide.tidechatcolor.TideChatColor
-api-version: '1.20'
-softdepend: [TideChat]
+api-version: '1.13'
+softdepend: [TideChat, PlaceholderAPI]

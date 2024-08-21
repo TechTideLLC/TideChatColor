@@ -6,7 +6,7 @@
 
   <groupId>gg.techtide</groupId>
   <artifactId>TideChatColor</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>TideChatColor</name>
@@ -83,6 +83,13 @@
           <groupId>gg.techtide</groupId>
           <artifactId>TideChat</artifactId>
           <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+          <groupId>gg.techtide</groupId>
+          <artifactId>PAPI</artifactId>
+          <version>1.0-SNAPSHOT</version>
+          <scope>system</scope>
+          <systemPath>${basedir}/libs/PlaceholderAPI-2.11.6.jar</systemPath>
       </dependency>
   </dependencies>
 </project>

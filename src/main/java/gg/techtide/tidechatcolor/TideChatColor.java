@@ -11,6 +11,7 @@ import gg.techtide.tidechatcolor.listener.InteractListener;
 import gg.techtide.tidechatcolor.listener.StorageJoinLeaveListener;
 import gg.techtide.tidechatcolor.listener.custom.listener.ChatListener;
 import gg.techtide.tidechatcolor.listener.custom.service.CreationService;
+import gg.techtide.tidechatcolor.placeholder.ChatColorPlaceholder;
 import gg.techtide.tidechatcolor.player.ChatColorPlayer;
 import gg.techtide.tidechatcolor.player.storage.PlayerJsonStorage;
 import gg.techtide.tidechatcolor.player.storage.PlayerSQLStorage;
@@ -66,6 +67,7 @@ public final class TideChatColor extends TidePlugin {
         this.loadChatColors();
         this.loadStorage();
         this.loadListener();
+        this.loadPlaceholder();
 
         this.registerCommands();
     }
@@ -160,5 +162,11 @@ public final class TideChatColor extends TidePlugin {
     private void loadListener() {
         this.listener = new InteractListener(this);
         this.chatListener = new ChatListener(this);
+    }
+
+    private void loadPlaceholder() {
+        if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
+            new ChatColorPlaceholder(this).register();
+        }
     }
 }

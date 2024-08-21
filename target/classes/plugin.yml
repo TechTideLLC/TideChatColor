@@ -1,5 +1,5 @@
 name: TideChatColor
-version: '1.0-SNAPSHOT'
+version: '1.0.1'
 main: gg.techtide.tidechatcolor.TideChatColor
-api-version: '1.20'
+api-version: '1.13'
 softdepend: [TideChat]
