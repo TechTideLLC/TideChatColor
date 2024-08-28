@@ -29,6 +29,7 @@ public final class StorageJoinLeaveListener extends SimpleTideListener<TideChatC
         }
 
         profile.load();
+        profile.load(plugin);
     }
 
     @EventHandler
