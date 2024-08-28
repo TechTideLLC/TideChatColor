@@ -1,5 +1,6 @@
 name: TideChatColor
-version: '1.0.2'
+version: '1.0.3'
 main: gg.techtide.tidechatcolor.TideChatColor
 api-version: '1.13'
+depend: [TideLib]
 softdepend: [TideChat, PlaceholderAPI]

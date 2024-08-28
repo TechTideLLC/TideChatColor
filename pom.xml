@@ -83,6 +83,7 @@
           <groupId>gg.techtide</groupId>
           <artifactId>TideChat</artifactId>
           <version>1.0-SNAPSHOT</version>
+          <scope>provided</scope>
       </dependency>
       <dependency>
           <groupId>gg.techtide</groupId>

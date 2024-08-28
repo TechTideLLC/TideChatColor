@@ -17,7 +17,7 @@ public class ChatColorPlayer {
 
     @Id
     private final UUID uuid;
-    private String storedChatColor = "";
+    private String storedChatColor = "NO COLOR";
     private transient ChatColor selectedChatColor;
     private Map<String, CustomChatColor> customChatColors = new HashMap<>();
 
@@ -27,7 +27,7 @@ public class ChatColorPlayer {
             customChatColor.load(plugin);
         });
 
-        if (this.storedChatColor.equalsIgnoreCase("")) return;
+        if (this.storedChatColor.equalsIgnoreCase("NO COLOR")) return;
 
         if (this.storedChatColor.startsWith("CUSTOM-")) {
             this.selectedChatColor = customChatColors.get(this.storedChatColor);
@@ -59,12 +59,12 @@ public class ChatColorPlayer {
     }
 
     public void reset() {
-        this.storedChatColor = "";
+        this.storedChatColor = "NO COLOR";
         this.selectedChatColor = null;
     }
 
     public boolean hasColorSelected() {
-        return !this.storedChatColor.equalsIgnoreCase("");
+        return !this.storedChatColor.equalsIgnoreCase("NO COLOR");
     }
 
 }

@@ -1,7 +1,6 @@
 package gg.techtide.tidechatcolor.placeholder;
 
 import gg.techtide.tidechatcolor.TideChatColor;
-import gg.techtide.tidechatcolor.chatcolor.ChatColor;
 import gg.techtide.tidechatcolor.player.ChatColorPlayer;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.entity.Player;
