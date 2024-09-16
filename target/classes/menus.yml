@@ -12,7 +12,7 @@ menus:
     items:
       info:
         slot: 13
-        material: "END_CRYSTAL"
+        material: "NETHER_STAR"
         name: "&4&l[&c&l!&4&l] &cChat Color Info"
         lore:
           - "&8Menu Item"
@@ -64,7 +64,7 @@ menus:
           - "&7"
       next-page:
         slot: 24
-        material: "SPECTRAL_ARROW"
+        material: "ARROW"
         name: "&8&lNext &7&lPage &8(&f%page%&8)"
         lore:
           - "&8Informational Item"
@@ -74,8 +74,7 @@ menus:
           - "&7"
       previous-page:
         slot: 20
-        material: "TIPPED_ARROW"
-        potion-type: "INSTANT_HEAL"
+        material: "ARROW"
         hide-flags: true
         name: "&8&lPrevious &7&lPage &8(&f%page%&8)"
         lore:
@@ -108,7 +107,7 @@ menus:
           - "&7"
       next-page:
         slot: 24
-        material: "SPECTRAL_ARROW"
+        material: "ARROW"
         name: "&8&lNext &7&lPage &8(&f%page%&8)"
         lore:
           - "&8Informational Item"
@@ -118,8 +117,7 @@ menus:
           - "&7"
       previous-page:
         slot: 20
-        material: "TIPPED_ARROW"
-        potion-type: "INSTANT_HEAL"
+        material: "ARROW"
         hide-flags: true
         name: "&8&lPrevious &7&lPage &8(&f%page%&8)"
         lore:

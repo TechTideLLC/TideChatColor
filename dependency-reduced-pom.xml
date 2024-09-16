@@ -4,7 +4,7 @@
   <groupId>gg.techtide</groupId>
   <artifactId>TideChatColor</artifactId>
   <name>TideChatColor</name>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <build>
     <resources>
       <resource>

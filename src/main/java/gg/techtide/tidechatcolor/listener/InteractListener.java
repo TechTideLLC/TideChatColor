@@ -25,7 +25,7 @@ public class InteractListener extends SimpleTideListener<TideChatColor> {
         if (event.getAction() != Action.RIGHT_CLICK_AIR && event.getAction() != Action.RIGHT_CLICK_BLOCK) return;
         if (player.getInventory().getItemInMainHand() == null) return;
 
-        final ItemStack item = player.getInventory().getItemInMainHand();
+        final ItemStack item = player.getInventory().getItemInHand();
 
         if (item.getType() == Material.AIR) return;
         if (!Internals.get().nbt().contains(item, "COLOR_VOUCHER")) return;
